@@ -12,10 +12,8 @@ def cards(request,*args,**kwargs):
     cards = paginator.get_page(page_number) 
     return render(request,'myApp/card.html',{'cards':cards}) 
 
-def detail(request,card_id,*args,**kwargs):
-    cards = get_list_or_404(yugioh,id=card_id)
-    
-  
+def detail(request,cards_id,*args,**kwargs):
+    cards = get_list_or_404(yugioh,id=cards_id)
     return render(request,'myApp/detail.html',{'cards':cards}) 
 
 
