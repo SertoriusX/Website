@@ -13,3 +13,4 @@ class yugioh1(models.Model):
     last = models.CharField(max_length=100)
     test = models.CharField(max_length=100)
     prueba = models.CharField(max_length=100)
+    cards=models.ForeignKey(yugioh,on_delete=models.CASCADE)
