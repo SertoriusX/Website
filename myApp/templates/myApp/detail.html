@@ -4,7 +4,21 @@
 
 {%block content %}
 <h1>detail page</h1>
-
-<h1>{{cards.brand}}</h1>
-
+{%for i in cards%}
+<a href="/detail/{cards.id}">
+    <div class="card  m-2" style="border-radius: 15px;width: 18rem;background-image: url(https://scontent-mad2-1.xx.fbcdn.net/v/t1.15752-9/403654307_722451942728097_7194991720081973619_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=_nKUGXNCi3cAX9Gf_v_&_nc_ht=scontent-mad2-1.xx&oh=03_AdQWqnLGsj98R56_G67SOAWoDTlx16308uVPSYSVc0Phnw&oe=658BCBA7);background-repeat: no-repeat;background-size: cover;">
+      <h5 style="text-align: center;border: 5px solid black; width: 90%;margin-left: 15px;margin-top: 10px;color:white" class="card-title">{{i.brand}}</h5>
+        <img style="margin-left: 15px;height: 286px;width: 90%;border: 5px solid black" class="card-img-top" src="{{i.foto}}" alt="Card image cap"/>
+        <div class="card-body" style="border: 5px solid black;width: 90%;margin-left: 15px; margin-top: 6px;margin-bottom: 12px;color: white;">
+          <h5 style="margin-left: 80px;margin-top: -10px;" class="card-title">{{i.name}}</h5>
+          <div class="d-flex"  style=" border: 2px solid black; height: 30px;"> 
+          <p style="margin-left: 25px; width: 70px; " class="card-text">ATK:{{i.last:
+        }}</p>
+          
+          <p style=" margin-left: 40px; width: 70px;" class="card-text">DEF:{{i.defense}}</p>
+        </div>
+        </div>
+      </div>
+    </a>
+      {%endfor%}
 {%endblock%}
