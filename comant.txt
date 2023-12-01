@@ -1,4 +1,6 @@
 ----------------------------------------------------------------------------------------------
+
+
 Before to star some project you need to create env to be able create projects,with this command
 pip3 install virtualenv
 
