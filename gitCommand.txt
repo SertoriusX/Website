@@ -1,0 +1,10 @@
+1.To make email:
+git log --grapg --oneline -all
+git config --global user.'username'
+git config --global email.'name'email'
+2.Git commant
+git init
+git comnmit
+git config -l
+
+git token : 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
