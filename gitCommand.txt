@@ -1,7 +1,9 @@
 1.To make email:
 git log --grapg --oneline -all
-git config --global user.'username'
-git config --global email.'name'email'
+# Set username
+git config --global user.name "Mona Lisa"
+# Set password
+git config --global user.email "email@example.com"
 2.Git commant
 git init
 git comnmit
